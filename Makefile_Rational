@@ -1,0 +1,12 @@
+#----------------------------------------------------------------------------------
+# File:   Makefile_Rational
+# Author: Ibón González Martínez de Apellániz
+# Date:   febrero 2021
+# Coms:   Fichero Makefile para la calculadora de números racionales
+#         "make -f Makefile_Rational" compila y genera el ejecutable "calculadora"
+#----------------------------------------------------------------------------------
+all:
+	g++ pruebasRational.cpp Rational.cpp -std=c++11 -o calculadora
+
+clean:
+	${RM} calculadora
