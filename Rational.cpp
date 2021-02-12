@@ -8,7 +8,8 @@
 #include "Rational.h"
 
 //-------------------------------------------- Constructores de la clase Rational
-Rational::Rational() : num(1), den(1) { }
+Rational::Rational() : num(0), den(1) { }
+Rational::Rational(const int& n) : num(n), den(1) { }
 Rational::Rational(const int& n, const int& d) : num(n), den(d) { }
 Rational::Rational(const Rational& r) {
     *this = r;
