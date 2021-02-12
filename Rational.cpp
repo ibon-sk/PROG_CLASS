@@ -7,6 +7,8 @@
 
 #include "Rational.h"
 
+using namespace std;
+
 //-------------------------------------------- Constructores de la clase Rational
 Rational::Rational() : num(0), den(1) { }
 Rational::Rational(const int& n) : num(n), den(1) { }
