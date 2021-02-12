@@ -7,8 +7,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 #pragma once
 
 class Rational {
@@ -21,6 +19,7 @@ class Rational {
         //------------------------------------ Constructores
         Rational();
         Rational(const Rational& r);
+        Rational(const int& n);
         Rational(const int& n, const int& d);
         //------------------------------------ Destructor
         ~Rational();
