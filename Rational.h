@@ -30,5 +30,5 @@ class Rational {
         Rational& operator*(const Rational& r);
         Rational& operator/(const Rational& r);
         //------------------------------------ Operadores no miembros
-        friend ostream& operator<<(ostream& os, const Rational& r);
+        friend std::ostream& operator<<(std::ostream& os, const Rational& r);
 };
