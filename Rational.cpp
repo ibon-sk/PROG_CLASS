@@ -25,9 +25,9 @@ int mcd(int a, int b) {
     int n1 = max(a,b);
     int n2 = min(a,b);
     do {
-        mcd = b;
-        b = a%b;
-        a = mcd;
+        mcd = n2;
+        n2 = n1%n2;
+        n1 = mcd;
     } while (b != 0);
     return mcd;
 }
@@ -36,7 +36,7 @@ int mcm(int a, int b) {
     int mcm = 0;
     int n1 = max(a,b);
     int n2 = min(a,b);
-    mcm = a/mcd(a,b)*b;
+    mcm = n1/mcd(n1,n2)*n2;
     return mcm;
 }
 //-------------------------------------------- Método privado de la clase Rational
